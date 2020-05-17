@@ -1,0 +1,69 @@
+.resizeimage img { 
+  width: 100%; 
+}
+
+img#icon {
+  height: 40px;
+  width: 40px;
+}
+
+#contents {
+  padding-top: 55px;
+  background-color: #313437;
+  color: whitesmoke;
+}
+
+#abstract {
+  padding-top: 40px;
+  background-color: #181818;
+  height: 1000px;
+}
+
+#activity {
+  padding-top: 40px;
+  background-color: #313437;
+  height: 1000px;
+}
+
+#schedule {
+  padding-top: 40px;
+  background-color: #181818;
+  height: 1000px;
+}
+
+#contact {
+  padding-top: 40px;
+  background-color: #313437;
+  height: 950px;
+}
+
+.nav-link {
+  color: aliceblue;
+}
+
+.parent {
+  position: relative;
+}
+
+.parent h4 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+
+.contact-img {
+  height: 80px;
+  width: 80px;
+}
+
+.inline {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.inline li {
+  display: inline;
+  margin-right: 3em;
+}
