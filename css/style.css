@@ -14,7 +14,7 @@ div {
 
 p {
   padding-top: 50px;
-  font-size: 24pt;
+  font-size: 36pt;
   text-align: center;
 }
 
@@ -47,6 +47,7 @@ h1 {
   padding-top: 250px;
   padding-bottom: 50px;
   text-align:center;
+  font-size: 48pt!important;
 }
 
 .contact-img {
