@@ -17,17 +17,17 @@ div {
 
 #abstract {
   background-color: #181818;
-  height: 3000px;
+  height: 2500px;
 }
 
 #activity {
   background-color: #313437;
-  height: 3000px;
+  height: 2500px;
 }
 
 #schedule {
   background-color: #181818;
-  height: 3000px;
+  height: 2500px;
 }
 
 #contact {
@@ -66,7 +66,7 @@ div {
 }
 
 .inline {
-  margin-top: 100px;
+  margin-top: 300px;
   text-align: center;
 }
 
@@ -82,4 +82,8 @@ div {
 div.fadein {
   opacity: 1;
   transform: translateX(0px); 
+}
+
+.effect > h4 {
+  margin-top: 200px;
 }
