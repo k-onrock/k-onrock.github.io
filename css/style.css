@@ -3,11 +3,6 @@ img#icon {
   width: 50px;
 }
 
-/* img {
-  height: 256px;
-  width: 256px;
-} */
-
 div {
   background-color: #313437;
   color: white;
@@ -19,7 +14,7 @@ div {
 
 p {
   padding-top: 50px;
-  font-size: 20pt;
+  font-size: 24pt;
   text-align: center;
 }
 
@@ -48,7 +43,7 @@ p {
   color: white;
 }
 
-h2 {
+h1 {
   padding-top: 250px;
   padding-bottom: 50px;
   text-align:center;
