@@ -3,8 +3,8 @@
 }
 
 img#icon {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
 
 div {
@@ -44,7 +44,7 @@ div {
   position: relative;
 }
 
-.parent h4 {
+.parent h2 {
   position: absolute;
   top: 5%;
   left: 50%;
@@ -84,6 +84,14 @@ div.fadein {
   transform: translateX(0px); 
 }
 
-.effect > h4 {
+.effect > h2 {
   margin-top: 200px;
+}
+
+header {
+  font-size: 18pt;
+}
+
+body {
+  font-size: 18pt;
 }
