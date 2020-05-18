@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <title>軽音ロック</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" 
@@ -13,61 +14,80 @@
 
 <body>
   
-  <div class="fixed-top shadow">
+  <header class="shadow fixed-top" id="menu">
     <nav class="navbar navbar-expand bg-dark">
-      <a href="#" class="navbar-brand mr-auto">
+      <a href="#abstract" class="navbar-brand mr-auto">
         <img src="img/favicon.ico" alt="アイコン" id="icon">
       </a>
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="#" class="nav-link">具体的な活動内容</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">活動スケジュール</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">連絡先</a></li>
+        <li class="nav-item"><a href="#activity" class="nav-link">具体的な活動内容</a></li>
+        <li class="nav-item"><a href="#schedule" class="nav-link">活動スケジュール</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">連絡先</a></li>
       </ul>
     </nav>
-  </div>
-
-  <div id="contents">
+  </header>
     
-    <div id="abstract" class="parent">
-      <h4>軽音ロックとは？</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/rDju0FrcRAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div id="activity" class="parent">
-      <h4>具体的な活動内容</h4>
-    </div>
-
-    <div id="schedule" class="parent">
-      <h4>活動スケジュール</h4>
-    </div>
-
-    <div id="contact" class="parent">
-      <h4>連絡先</h4>
-      <ul class="inline">
-        <li class="nav-item">
-          <a href="https://twitter.com/okadaikonrock">
-            <img src="img/link_twitter.png" alt="twitter" class="contact-img">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.instagram.com/okadai__konrock/">
-            <img src="img/link_instagram.png" alt="instagram" class="contact-img">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.facebook.com/okadaikonrock/">
-            <img src="img/link_facebook.png" alt="facebook" class="contact-img">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="http://seikagai.ccsv.okayama-u.ac.jp/data/64/club_top_dtl/">
-            <img src="img/link_ou.png" alt="club" class="contact-img">
-          </a>
-        </li>
-      </ul>
-    </div>
-
+  <div id="abstract" class="parent effect">
+    <h4>軽音ロックとは？</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rDju0FrcRAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+
+  <div id="activity" class="parent effect">
+    <h4>具体的な活動内容</h4>
+  </div>
+
+  <div id="schedule" class="parent effect">
+    <h4>活動スケジュール</h4>
+  </div>
+
+  <div id="contact" class="parent effect">
+    <h4>連絡先</h4>
+    <ul class="inline">
+      <li class="nav-item">
+        <a href="https://twitter.com/okadaikonrock">
+          <img src="img/link_twitter.png" alt="twitter" class="contact-img">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/okadai__konrock/">
+          <img src="img/link_instagram.png" alt="instagram" class="contact-img">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/okadaikonrock/">
+          <img src="img/link_facebook.png" alt="facebook" class="contact-img">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="http://seikagai.ccsv.okayama-u.ac.jp/data/64/club_top_dtl/">
+          <img src="img/link_ou.png" alt="club" class="contact-img">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        var scroll_top = $(window).scrollTop();
+        if (scroll_top >= 3000) {
+          $(menu).fadeIn();
+          console.log(scroll_top)
+        }
+
+        $('.effect').each(function () {
+          var offset_top = $(this).offset().top;
+          var top_margin = 30;
+          if (scroll_top > offset_top - top_margin) {
+            $(this).addClass('fadein');
+          } else {
+            $(this).removeClass('fadein');
+          }
+        });
+      });
+    });
+  </script>
+
 
 </body>
 </html>

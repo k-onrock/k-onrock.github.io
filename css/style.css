@@ -7,9 +7,12 @@ img#icon {
   width: 40px;
 }
 
-#contents {
+div {
   background-color: #313437;
-  color: whitesmoke;
+  color: white;
+  transition: ease .5s;
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
 #abstract {
@@ -34,7 +37,7 @@ img#icon {
 }
 
 .nav-link {
-  color: aliceblue;
+  color: white;
 }
 
 .parent {
@@ -51,7 +54,7 @@ img#icon {
 
 .parent iframe {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform : translate(-50%,-50%);
   transform : translate(-50%,-50%);
@@ -70,4 +73,13 @@ img#icon {
 .inline li {
   display: inline;
   margin-right: 3em;
+}
+
+#menu {
+  display: none;
+}
+
+div.fadein {
+  opacity: 1;
+  transform: translateX(0px); 
 }
