@@ -9,7 +9,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
     crossorigin="anonymous">
-    <link rel="icon" href="img/favicon.ico" sizes="16x16">
+  <link rel="icon" href="img/favicon.ico" sizes="16x16">
 </head>
 
 <body>
@@ -27,20 +27,31 @@
     </nav>
   </header>
     
-  <div id="abstract" class="parent">
+  <div id="abstract">
     <h2>軽音ロックとは？</h2>
+    <p>ああああああああああ</p>
+    <p>ああああああああああ</p>
+    <p>ああああああああああ</p>
+    <p>ああああああああああ</p>
+    <p>ああああああああああ</p>
+    <img src="img/live1.png" alt="live1" class="live-img">
+    <img src="img/live2.png" alt="live2" class="live-img">
+    <img src="img/live3.png" alt="live3" class="live-img">
+    <img src="img/live4.png" alt="live4" class="live-img">
+    <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/rDju0FrcRAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  </div>
 
-  <div id="activity" class="parent effect">
+  <div id="activity" class="effect">
     <h2>具体的な活動内容</h2>
   </div>
 
-  <div id="schedule" class="parent effect">
+  <div id="schedule" class="effect">
     <h2>活動スケジュール</h2>
   </div>
 
-  <div id="contact" class="parent effect">
+  <div id="contact" class="effect">
     <h2>連絡先</h2>
     <ul class="inline">
       <li class="nav-item">
@@ -73,7 +84,7 @@
 
   <script>
     $(function () {
-      $('#abstract').addClass('fadein');
+      $(abstract).addClass('fadein');
       $(window).scroll(function () {
         var scroll_top = $(window).scrollTop();
         if (scroll_top >= 2300) {
@@ -82,13 +93,18 @@
 
         $('.effect').each(function () {
           var offset_top = $(this).offset().top;
-          var top_margin = 200;
+          var top_margin = 300;
           if (scroll_top > offset_top - top_margin) {
             $(this).addClass('fadein');
           } else {
             $(this).removeClass('fadein');
           }
         });
+      });
+
+      $("a[href^='#']").click(function () {
+        // TODO ページ遷移した際のアニメーション
+        console.log('ok')
       });
     });
   </script>
