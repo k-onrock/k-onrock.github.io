@@ -76,13 +76,13 @@
       $('#abstract').addClass('fadein');
       $(window).scroll(function () {
         var scroll_top = $(window).scrollTop();
-        if (scroll_top >= 2500) {
+        if (scroll_top >= 2300) {
           $(menu).fadeIn();
         }
 
         $('.effect').each(function () {
           var offset_top = $(this).offset().top;
-          var top_margin = 10;
+          var top_margin = 200;
           if (scroll_top > offset_top - top_margin) {
             $(this).addClass('fadein');
           } else {
