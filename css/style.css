@@ -17,23 +17,23 @@ div {
 
 #abstract {
   background-color: #181818;
-  height: 10000px;
+  height: 3000px;
 }
 
 #activity {
   background-color: #313437;
-  height: 10000px;
+  height: 3000px;
 }
 
 #schedule {
   background-color: #181818;
-  height: 10000px;
+  height: 3000px;
 }
 
 #contact {
-  padding-top: 200px;
+  padding-top: 100px;
   background-color: #313437;
-  height: 10000px;
+  height: 2500px;
 }
 
 .nav-link {
@@ -66,7 +66,7 @@ div {
 }
 
 .inline {
-  margin-top: 500px;
+  margin-top: 100px;
   text-align: center;
 }
 
