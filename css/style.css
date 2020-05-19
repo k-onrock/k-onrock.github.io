@@ -117,3 +117,78 @@ header {
   font-size: 36pt;
   margin: 80px;
 }
+
+/* タイムテーブル関係 */
+caption {
+  caption-side: top!important;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #181818;
+  color: white!important;
+}
+
+table {
+  width: 450px;
+  float: left;
+  margin-left: 5px;
+}
+
+th,td {
+  border: 1px solid #fff;
+  color: black;
+}
+
+th {
+  width: 70px;
+  font-size:12px;
+  color: #fff;
+  text-align: center;
+  background-color: #2C3E5C;
+  vertical-align: top;
+}
+
+td {
+  height: 25px;
+  padding: 0 10px;
+  font-size: 14px;
+  text-align: center;
+  background: #f3f4ef;
+}
+
+.borderNone {
+  border-bottom: 1px solid #2C3E5C;
+}
+
+.color01{
+  background:#D8C8AE;
+}
+
+.color02 {
+  background: #80B7E8;
+}
+
+.line2 {
+  height: 51px;
+}
+
+.line3 {
+  height: 77px;
+}
+
+th.just {
+  padding-top: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#schedule > div {
+  opacity: 1;
+  /* margin: 0 auto; */
+  display: inline-block;
+  background-color: #181818;
+  padding-left: 70px;
+}
